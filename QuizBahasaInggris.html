@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quiz Bahasa Inggris</title>
+</head>
+<body>
+
+    <script>
+
+        var nilai = 0;
+
+        var soal=
+        [
+            {soal : "Apa Bahasa Inggris dari kursi?", jawaban : "Chair"},
+            {soal : "Apa Bahasa Inggris dari buku?", jawaban : "Book"},
+            {soal : "Apa Bahasa Inggris dari kentut?", jawaban : "Fart"},
+            {soal : "This room is hot. Please ... the fan!", jawaban : "Turn on"},
+            {soal : "The test will start. Please ... the book!", jawaban : "Close"},
+        
+        ]
+
+        soal.forEach(function(data){
+            var jawaban = prompt(data.soal);
+            if(jawaban == data.jawaban){
+                nilai = nilai + 20;
+            }
+        });
+
+        alert("Nilaimu adalah,  " + nilai);
+       
+
+    
+    </script>
+
+</body>
+</html>

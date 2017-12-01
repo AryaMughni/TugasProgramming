@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quiz Biologi</title>
+</head>
+<body>
+
+    <script>
+
+        var nilai = 0;
+
+        var soal=
+        [
+            {soal : "Apakah manusia termasuk mamalia?", jawaban : "ya"},
+            {soal : "Benarkah tumbuhan jika berfotosintesis membutuhkan klorofil daun?", jawaban : "ya"},
+            {soal : "Apakah bumi merupakan pusat tata surya?", jawaban : "tidak"},
+            {soal : "Apakah bumi datar?", jawaban : "tidak"},
+            {soal : "Benarkah ikan bernafas dengan insang?", jawaban : "ya"},
+            {soal : "Apakah Kecoa merupakan serangga?", jawaban : "ya"},
+            {soal : "Apakah Burung berkembang biak dengan bertelur?", jawaban : "ya"},
+            {soal : "Apakah ular termasuk hewan mamalia?", jawaban : "tidak"},
+            {soal : "Apakah Matahari merupakan pusat tata surya?", jawaban : "ya"},
+            {soal : "Mengapa semua planet di tata surya mengelilingi matahari?", jawaban : "karena matahari mempunyai gravitasi yg sangat besar"},
+
+        ]
+
+        soal.forEach(function(data){
+            var jawaban = prompt(data.soal);
+            if(jawaban == data.jawaban){
+                nilai = nilai + 10;
+            }
+        });
+
+        alert("Nilaimu adalah,  " + nilai);
+       
+
+    
+    </script>
+
+</body>
+</html>

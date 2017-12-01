@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quiz Pertambahan Dan Pengurangan</title>
+</head>
+<body>
+
+    <script>
+
+        var nilai = 0;
+
+        var soal=
+        [
+            {soal : "154 + 36 = ?", jawaban : "190"},
+            {soal : "10 + 56 = ?", jawaban : "66"},
+            {soal : "54 - 60 = ?", jawaban : "-6"},
+            {soal : "98 - 8 = ?", jawaban : "90"},
+            {soal : "50 + 69 - 19 = ?", jawaban : "100"},
+        
+        ]
+
+        soal.forEach(function(data){
+            var jawaban = prompt(data.soal);
+            if(jawaban == data.jawaban){
+                nilai = nilai + 20;
+            }
+        });
+
+        alert("Nilaimu adalah,  " + nilai);
+       
+
+    
+    </script>
+
+</body>
+</html>

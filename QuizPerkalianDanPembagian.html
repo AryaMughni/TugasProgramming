@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quiz Perkalian Dan Pembagian</title>
+</head>
+<body>
+
+    <script>
+
+        var nilai = 0;
+
+        var soal=
+        [
+            {soal : "5 X 10 = ?", jawaban : "50"},
+            {soal : "5 X 9 = ?", jawaban : "45"},
+            {soal : "54 : 2 = ?", jawaban : "27"},
+            {soal : "3 X 10 : 2 = ?", jawaban : "15"},
+            {soal : "5000 X 10000 : 1000000 = ?", jawaban : "50"},
+        
+        ]
+
+        soal.forEach(function(data){
+            var jawaban = prompt(data.soal);
+            if(jawaban == data.jawaban){
+                nilai = nilai + 20;
+            }
+        });
+
+        alert("Nilaimu adalah,  " + nilai);
+       
+
+    
+    </script>
+
+</body>
+</html>
