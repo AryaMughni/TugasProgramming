@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nilai KKM</title>
+</head>
+<body>
+    <script>
+        var kkm = 75;
+        var hmm = prompt("Berapa nilai kamu?");
+        // A : Nilai > 90
+        // B : Nilai > 80 && nilai < 90 || 80 < nilai < 90
+        // C : Nilai > 75
+        // D : Nilai == 75
+        if(hmm == kkm){
+            alert("D, masih kurang, jangan main dan tingkatkan belajarmu!!");
+        } else if(hmm > kkm && hmm < 81){
+            alert("C, cukup, jangan bangga akan nilaimu!");
+        } else if(hmm > 80 && hmm < 91){
+            alert("B, baik, tetap semangat!");
+        } else if(hmm > 90 && hmm < 101){
+            alert("A, sangat baik, selamat ya!!");
+        } else {
+            alert("E, tingkatkan lagi belajarmu!!!!!");
+        }
+
